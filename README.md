@@ -4,45 +4,23 @@ AI Visual Production Specification
 
 ---
 
-## Overview
+# 项目简介
 
-AVPS 是一个用于 AI Visual Production 的规范体系。
+AVPS（AI Visual Production Specification）是一套面向 AI Visual Production 的规范体系。
 
-整个系统采用 Asset-Centric Architecture，以 Specification 驱动 Pipeline、Generation 与 Post Production。
-
----
-
-## Repository Structure
-
-```text
-00 Core Principles
-01 Architecture
-02 Asset Specification
-03 Pipeline Specification
-
-90 Design Decisions
-95 Canonical Specification Registry
-96 Baseline Manifest
-
-99 Review Checklist
-99 Specification Patterns
-```
+整个系统采用 Asset-Centric Architecture，以 Specification 为核心，统一定义 Asset、Pipeline、Governance 与 Review Framework，为长期维护、持续扩展及跨 Specification 协作提供一致性的架构基础。
 
 ---
 
-## Current Baseline
+# 当前状态
+
+Repository Status
+
+Development
 
 Current Baseline
 
 v3.0.0
-
-Status
-
-Development
-
----
-
-## Current Development
 
 Current Working Specification
 
@@ -50,39 +28,70 @@ Current Working Specification
 
 ---
 
-## Governance
+# Repository Structure
 
-Canonical Specification Registry
+```text
+docs/
 
+00_Core_Principles.md
+01_Architecture.md
+
+02_Asset_Specification/
+    01_Foundation.md
+    02_Data_Models.md
+    03_Relationships.md
+    04_Lifecycle.md
+    05_Validation.md
+    06_Governance.md
+
+03_Pipeline_Specification.md
+
+90_Design_Decisions.md
 95_Canonical_Specification_Registry.md
-
-Baseline Manifest
-
 96_Baseline_Manifest.md
 
-Review Checklist
-
 99_Review_Checklist.md
+99_Specification_Patterns.md
+```
 
 ---
 
-## Design Principles
+# 核心设计原则
+
+AVPS 遵循以下核心原则：
 
 - Single Responsibility
 - Reference First
 - Asset-Centric
 - Specification Driven
+- Consistency First
 - Long-term Maintainability
 
 ---
 
-## Development Workflow
+# Governance
 
-Development
+Governance Specification 包括：
+
+- 90_Design_Decisions
+- 95_Canonical_Specification_Registry
+- 96_Baseline_Manifest
+- 99_Review_Checklist
+- 99_Specification_Patterns
+
+---
+
+# 开发流程
+
+Specification Development
 
 ↓
 
-Review
+Part Review
+
+↓
+
+Full Specification Review
 
 ↓
 
@@ -90,8 +99,22 @@ Freeze
 
 ↓
 
-Baseline Update
+Update Baseline Manifest
 
 ↓
 
 Next Specification
+
+---
+
+# Version Management
+
+所有正式版本均通过 Baseline Manifest 管理。
+
+所有 Canonical Specification 统一登记于 Canonical Specification Registry。
+
+---
+
+# License
+
+目前仅用于 AVPS Specification Development。
