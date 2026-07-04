@@ -96,14 +96,14 @@ Manifest 应作为 Release Information 的唯一权威来源。
 Manifest 中包含的所有 Specification：
 
 - 应存在于 Canonical Specification Registry。
-- 應屬於同一 Frozen Baseline。
-- 應具有唯一 Released Version。
+- 应属于同一 Frozen Baseline。
+- 应具有唯一 Released Version。
 
 ---
 
 ## 2.4 Version Consistency
 
-Manifest 中引用的所有 Specification Version 應保持一致。
+Manifest 中引用的所有 Specification Version 应保持一致。
 
 不得：
 
@@ -114,9 +114,9 @@ Manifest 中引用的所有 Specification Version 應保持一致。
 
 ## 2.5 Reference First
 
-Manifest 應遵循 Reference First Principle。
+Manifest 应遵循 Reference First Principle。
 
-Manifest 不應重複定義 Registry 或 Canonical Specification 已定義的資訊。
+Manifest 不应重复定义 Registry 或 Canonical Specification 已定义的信息。
 
 ---
 
@@ -146,7 +146,7 @@ Governance
 
 # 4. Included Specifications
 
-Manifest 應列出當前 Frozen Baseline 所包含的 Canonical Specification。
+Manifest 应列出当前 Frozen Baseline 所包含的 Canonical Specification。
 
 | Specification | Released Version |
 |---------------|------------------|
@@ -177,31 +177,31 @@ Manifest 應列出當前 Frozen Baseline 所包含的 Canonical Specification。
 
 Included Specification：
 
-- 應存在於 Canonical Specification Registry。
-- 應完成 Freeze。
-- 應屬於當前 Frozen Baseline。
-- 應具有正式 Released Version。
+- 应存在于 Canonical Specification Registry。
+- 应完成 Freeze。
+- 应属于当前 Frozen Baseline。
+- 应具有正式 Released Version。
 
 ---
 
 ## 5.2 Version Integrity
 
-每個 Included Specification：
+每个 Included Specification：
 
-- 應具有唯一 Released Version。
-- 應屬於當前 Baseline Version。
+- 应具有唯一 Released Version。
+- 应属于当前 Baseline Version。
 
 不得：
 
 - 缺失 Version。
-- 重複 Version。
+- 重复 Version。
 - 混用不同 Baseline Version。
 
 ---
 
 ## 5.3 Manifest Consistency
 
-Manifest 應保持：
+Manifest 应保持：
 
 - Baseline Consistency
 - Version Consistency
@@ -211,9 +211,9 @@ Manifest 應保持：
 
 # 6. Manifest Update
 
-Manifest 僅應於以下情況更新：
+Manifest 仅应在以下情況更新：
 
-- 發布新的 Frozen Baseline。
+- 发布新的 Frozen Baseline。
 - 新增 Included Specification。
 - 移除 Included Specification。
 - Included Specification Version 更新。
@@ -228,35 +228,35 @@ Manifest 更新不得修改：
 
 # 7. Relationship with Registry
 
-Canonical Specification Registry 定義：
+Canonical Specification Registry 定义：
 
 - Canonical Specifications
 - Canonical Responsibilities
 - High-Level Dependencies
 
-Baseline Manifest 定義：
+Baseline Manifest 定义：
 
 - Baseline Release
 - Included Specifications
 - Released Versions
 
-Registry 定義系統結構。
+Registry 定义系统结构。
 
-Manifest 定義發布內容。
+Manifest 定义发布内容。
 
-兩者職責不得重疊。
+两者职责不得重叠。
 
 ---
 
 # 8. Review Usage
 
-Freeze Review 應：
+Freeze Review 应：
 
 - 引用 Canonical Specification Registry。
-- 確認 Baseline Manifest。
+- 确认 Baseline Manifest。
 - Review Working Specification。
 
-Manifest 用於確認：
+Manifest 用于确认：
 
 - Baseline Version。
 - Included Specifications。
@@ -268,28 +268,28 @@ Manifest 不替代 Specification Review。
 
 # 9. Future Evolution
 
-Manifest 應支持：
+Manifest 应支持：
 
 - Baseline Evolution
 - Version Management
 - Long-term Traceability
 
-每次發布新的 Frozen Baseline 時，應更新 Manifest。
+每次发布新的 Frozen Baseline 時，应更新 Manifest。
 
 ---
 
 # 10. Summary
 
-Baseline Manifest 為 AVPS Frozen Baseline 提供統一發布記錄。
+Baseline Manifest 为 AVPS Frozen Baseline 提供统一发布记录。
 
-Manifest 定義：
+Manifest 定义：
 
 - Baseline Version
 - Release Information
 - Included Specifications
 - Released Specification Versions
 
-Manifest 不定義：
+Manifest 不定义：
 
 - Specification Structure
 - Canonical Responsibility
@@ -298,4 +298,4 @@ Manifest 不定義：
 - Freeze
 - Specification Content
 
-Baseline Manifest 應作為 AVPS Frozen Baseline 的唯一發布記錄（Authoritative Release Manifest）。
+Baseline Manifest 应作为 AVPS Frozen Baseline 的唯一发布记录（Authoritative Release Manifest）。
