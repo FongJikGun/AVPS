@@ -268,13 +268,13 @@ Registry 与 Manifest 应保持一致，但职责不得重叠。
 
 # 9. Future Evolution
 
-Registry 應支持：
+Registry 应支持：
 
 - Specification Expansion
 - Architecture Evolution
 - Long-term Maintainability
 
-新增 Canonical Specification 時，应同步更新 Registry。
+新增 Canonical Specification 时，应同步更新 Registry。
 
 ---
 
