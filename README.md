@@ -12,6 +12,19 @@ AVPS（AI Visual Production Specification）是一套面向 AI Visual Production
 
 ---
 
+# Repository Policy
+
+本 Repository 是 AVPS 的唯一官方规范仓库（Single Source of Truth，SSOT）。
+
+除非特别说明：
+
+- 所有 Specification 均以 Repository 当前内容为准。
+- 所有 Baseline 均以 96_Baseline_Manifest 为准。
+- 所有 Architecture 均以 01_Architecture 为准。
+- 所有 Cross-Specification Review 均以 GitHub Repository 当前版本为准。
+
+---
+
 # 当前状态
 
 Repository Status
