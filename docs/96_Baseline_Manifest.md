@@ -1,16 +1,10 @@
 # 96. Baseline Manifest
 
-Version
+Version: 3.2.0
 
-1.0.0
+Status: Stable
 
-Status
-
-Draft
-
-Authority
-
-Governance
+Authority: Governance
 
 ---
 
@@ -122,25 +116,15 @@ Manifest 不应重复定义 Registry 或 Canonical Specification 已定义的信
 
 # 3. Baseline Information
 
-Baseline Version
+Baseline Version: 3.1.0
 
-3.0.0
+Baseline Type: Frozen Baseline
 
-Baseline Type
+Release Status: Stable
 
-Frozen Baseline
+Release Date: 2026-07-05
 
-Release Status
-
-Stable
-
-Release Date
-
-YYYY-MM-DD
-
-Released By
-
-Governance
+Released By: Governance
 
 ---
 
@@ -158,6 +142,8 @@ Manifest 应列出当前 Frozen Baseline 所包含的 Canonical Specification。
 | 02_Asset_Specification_04_Lifecycle | 3.0.0 |
 | 02_Asset_Specification_05_Validation | 3.0.0 |
 | 02_Asset_Specification_06_Governance | 3.0.0 |
+| 03_Pipeline_Specification | 3.0.0 |
+| 04_Naming_Convention | 3.0.0 |
 | 90_Design_Decisions | 2.0.0 |
 | 95_Canonical_Specification_Registry | 1.0.0 |
 | 99_Review_Checklist | 3.1.0 |
@@ -211,7 +197,7 @@ Manifest 应保持：
 
 # 6. Manifest Update
 
-Manifest 仅应在以下情況更新：
+Manifest 仅应在以下情况更新：
 
 - 发布新的 Frozen Baseline。
 - 新增 Included Specification。
@@ -274,7 +260,7 @@ Manifest 应支持：
 - Version Management
 - Long-term Traceability
 
-每次发布新的 Frozen Baseline 時，应更新 Manifest。
+每次发布新的 Frozen Baseline 时，应更新 Manifest。
 
 ---
 
