@@ -11,7 +11,7 @@
 
 ---
 
-# [v3.0.0]
+# [v3.1.0]
 
 Status
 
@@ -22,6 +22,7 @@ Current Development Baseline
 - 00_Core_Principles
 - 01_Architecture
 - 02_Asset_Specification
+- 03_Pipeline_Specification
 - 90_Design_Decisions
 - 95_Canonical_Specification_Registry
 - 96_Baseline_Manifest
@@ -30,7 +31,7 @@ Current Development Baseline
 
 ## In Progress
 
-- 03_Pipeline_Specification
+- 04_Naming_Convention
 
 ---
 
