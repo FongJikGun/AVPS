@@ -302,7 +302,7 @@ PASS / FAIL
 
 确认：
 
-当前 Specification 是否与其他 Canonical Specifications 保持清晰职责边界。
+当前 Specification 是否与其他 Canonical Specification 保持清晰职责边界。
 
 检查项：
 
@@ -326,7 +326,7 @@ PASS / FAIL
 
 # 4. Required / Optional Review
 
-本章节适用于所有 Asset Data Model。
+本章节仅适用于所有 Asset Data Model。
 
 用于验证字段分类（Required / Optional）是否合理。
 
@@ -461,7 +461,7 @@ PASS / FAIL
 | Maintainability | □ | □ | □ |
 | Cross-Specification Responsibility | □ | □ | □ |
 
-全部 PASS 方可进入 Freeze。
+符合 Freeze Criteria 方可进入 Freeze。
 
 ---
 
@@ -469,7 +469,11 @@ PASS / FAIL
 
 Specification 必须满足：
 
-□ 所有 Mandatory Review PASS
+□ 所有 Mandatory Review 必须 PASS
+
+□ Full Specification Review 全部 Phase PASS
+
+□ Review Findings 满足 Freeze Policy
 
 □ 无重大架构问题
 
@@ -517,7 +521,20 @@ Reviewer:
 Result:
 PASS / FAIL
 
+Review Phase:
+
+Phase 1 : PASS / FAIL
+
+Phase 2 : PASS / FAIL
+
+Phase 3 : PASS / FAIL
+
+Phase 4 : PASS / FAIL
+
 Summary:
+
+Responsibility:
+PASS / FAIL
 
 Architecture:
 PASS / FAIL
@@ -612,16 +629,21 @@ Approved / Rejected
 Draft
     │
     ▼
-Self Review
-    │
-    ▼
-Architecture Review
+Part Review
     │
     ▼
 Issue Fix
     │
     ▼
-Final Review
+Full Specification Review
+    │
+    ├── Phase 1：Structure Review
+    │
+    ├── Phase 2：Cross-Specification Review
+    │
+    ├── Phase 3：Design Quality Review
+    │
+    └── Phase 4：Freeze Readiness & Final Recommendation
     │
     ▼
 PASS
@@ -633,9 +655,60 @@ Freeze
 Stable
 ```
 
-未完成 Final Review：
+未完成 Full Specification Review：
 
 不得进入 Stable。
+
+---
+
+## 9.1 Baseline Loading
+
+Cross-Specification Review 必须基于当前 Frozen Baseline。
+
+开始 Phase 2 前，应加载以下 Baseline。
+
+必要项目（Mandatory）
+
+- 当前 Specification
+- 当前 Frozen Baseline Manifest
+- 00_Core_Principles
+- 01_Architecture
+
+依赖项目（Dependency）
+
+- 当前 Specification 所直接引用的所有 Canonical Specification。
+
+Cross-Specification Review 不得依据：
+
+- 历史评审内容（Review Context）
+- 已过期附件
+- 历史记忆
+- 非当前 Frozen Baseline
+
+---
+
+## 9.2 Phase Completion Rule
+
+所有 Phase 必须按顺序完成。
+
+不得跳过任何 Phase。
+
+进入下一 Phase 前：
+
+上一 Phase 必须完成 Review。
+
+Issue Fix 完成后：
+
+应重新执行受影响的 Review Phase。
+
+所有 P0、P1 Findings 必须关闭。
+
+所有 Mandatory Review 必须 PASS。
+
+方可进入 Freeze Recommendation。
+
+P2 Findings 是否允许延期处理，
+应依据 Freeze Policy 决定。
 
 ---
 
