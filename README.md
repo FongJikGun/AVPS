@@ -27,17 +27,13 @@ AVPS（AI Visual Production Specification）是一套面向 AI Visual Production
 
 # 当前状态
 
-Repository Status
+Repository Status: Development
 
-Development
+Current Frozen Baseline: v3.1.0
 
-Current Baseline
+Release Status: Stable
 
-v3.0.0
-
-Current Working Specification
-
-03_Pipeline_Specification
+Current Working Specification: 04_Naming_Convention
 
 ---
 
@@ -58,6 +54,7 @@ docs/
     06_Governance.md
 
 03_Pipeline_Specification.md
+04_Naming_Convention
 
 90_Design_Decisions.md
 95_Canonical_Specification_Registry.md
