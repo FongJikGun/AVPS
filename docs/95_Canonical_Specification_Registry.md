@@ -155,6 +155,7 @@ Registry Entry 不应包含：
 | 02_Asset_Specification_05_Validation | Asset | Asset Validation | Asset Specifications |
 | 02_Asset_Specification_06_Governance | Asset | Asset Governance | Asset Specifications |
 | 03_Pipeline_Specification | Pipeline | Canonical Pipeline | Core, Asset Specifications |
+| 04_Naming_Convention | Governance | Canonical Naming | Core, Architecture, Asset Specifications, Pipeline |
 | 90_Design_Decisions | Governance | Architecture Decisions | Core |
 | 96_Baseline_Manifest | Governance | Baseline Release Management | Canonical Specification Registry |
 | 99_Review_Checklist | Governance | Review Framework | Core |
