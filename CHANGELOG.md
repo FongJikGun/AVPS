@@ -11,6 +11,27 @@
 
 ---
 
+# [v3.2.0]
+
+## Added
+
+- Added 04_Naming_Convention.
+
+## Review
+
+- Part Review: PASS
+- Full Specification Review: PASS
+
+## Freeze
+
+- Approved for Freeze.
+
+## Baseline
+
+- Included in Frozen Baseline v3.2.0.
+
+---
+
 # [v3.1.0]
 
 Status
