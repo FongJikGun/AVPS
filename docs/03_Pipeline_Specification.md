@@ -4,11 +4,11 @@
 # Part G：Pipeline
 #
 # Version : 3.0.0
-# Status  : TODO
+# Status  : Stable
 # Authority : Specification
 # Priority : Highest
-# Review : TODO
-# Freeze : TODO
+# Review : PASS
+# Freeze : APPROVED
 #
 # Description:
 # 定义 AVPS 所有 Canonical Pipeline 的统一规范。
@@ -147,7 +147,7 @@ Pipeline Philosophy 应确保：
 - Pipeline Consistency。
 - Pipeline Stability。
 - Long-term Maintainability。
-- Sustainable Evolution。
+- Pipeline Evolution。
 - Cross Specification Consistency。
 
 Pipeline 应持续维护 Canonical AVPS Production Flow 的一致性。
@@ -174,7 +174,7 @@ Pipeline 不负责 Runtime Execution 或 Business Decision。
 - 应遵循 Pipeline Philosophy。
 - 应遵循 Canonical AVPS Specifications。
 - 应保持长期一致性。
-- 应支持持续演進。
+- 应支持持续演进。
 
 Pipeline Philosophy 为后续 Pipeline Structure 提供统一设计基础。
 
@@ -336,6 +336,8 @@ Pipeline Rules 不定义：
 - Pipeline Extension。
 
 Pipeline Rules 仅定义 Canonical Pipeline 的行为规范。
+
+Pipeline 不得创建、修改或覆盖 Asset Content，仅负责组织和引用已定义的 Asset。
 
 ---
 
@@ -560,6 +562,8 @@ Pipeline Execution 应包括：
 
 所有 Pipeline 应遵循统一 Execution Flow。
 
+Pipeline Validation 应引用 02_Asset_Specification_05_Validation 定义的 Validation Framework，而不重新定义 Validation Logic。
+
 ---
 
 ## 7.4 Execution Requirements
@@ -654,6 +658,8 @@ Pipeline Orchestration 应负责：
 - Pipeline Flow。
 - Pipeline Consistency。
 
+Pipeline Orchestration 不拥有任何 Canonical Asset Ownership，仅负责协调 Canonical Asset Flow。
+
 Pipeline Orchestration 不应重新定义任何 Pipeline Stage。
 
 ---
@@ -678,7 +684,7 @@ Pipeline Orchestration 应保持一致且可追踪。
 - 应支持 Audit。
 - 应支持 Verification。
 - 应支持 Traceability。
-- 应支持 Continuous Improvement。
+- 应保持 Orchestration Consistency。
 
 Pipeline Orchestration 不得绕过 Canonical Pipeline Principles。
 
@@ -808,6 +814,10 @@ Pipeline Extension 为后续 Pipeline Integration 提供统一规范基础。
 
 # 10. Pipeline Integration
 
+Pipeline Integration 应遵循 01_Architecture 定义的模块层级（Module Hierarchy）与数据流（Data Flow），不得建立违反 Architecture 的直接依赖。
+
+---
+
 ## 10.1 Integration Overview
 
 Pipeline Integration 定义 Canonical Pipeline 的统一集成规范。
@@ -838,7 +848,7 @@ Pipeline Integration 应：
 
 ## 10.3 Integration Scope
 
-Pipeline Integration 应涵盖：
+Pipeline Integration 可扩展至以下 Canonical Specification Domain：
 
 - Asset Specifications。
 - Naming Conventions。
@@ -1083,7 +1093,6 @@ Pipeline Specification 为所有 Pipeline 提供统一规范依据。
 
 Pipeline Specification 应支持：
 
-- Continuous Improvement。
 - Backward Compatibility。
 - Specification Evolution。
 - Long-term Maintainability。
