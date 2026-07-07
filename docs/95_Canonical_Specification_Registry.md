@@ -1,16 +1,10 @@
 # 95. Canonical Specification Registry
 
-Version
+Version: 3.2.0
 
-3.2.0
+Status: Draft
 
-Status
-
-Draft
-
-Authority
-
-Governance
+Authority: Governance
 
 ---
 
